@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.branding {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1130px;
+  height: auto;
+  gap: 20px;
+  padding-bottom: 170px;
+}
+@media screen and (max-width: 1024px) {
+  .branding {
+    padding-bottom: 140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .branding {
+    flex-direction: column;
+    gap: 55px;
+    padding-bottom: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .branding {
+    gap: 35px;
+  }
+}
+.branding__picture__container {
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  width: 50%;
+  height: 588px;
+}
+@media screen and (max-width: 768px) {
+  .branding__picture__container {
+    width: 100%;
+    height: 300px;
+  }
+}
+.branding__picture__container picture {
+  width: 50%;
+  height: 100%;
+}
+.branding__picture__container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.branding-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .branding-text-container {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .branding-text-container {
+    align-items: center;
+    width: 100%;
+  }
+}
+.branding-text {
+  text-align: left;
+  color: grey;
+  width: 81%;
+}
+@media screen and (max-width: 768px) {
+  .branding-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .branding-text {
+    width: 100%;
+  }
+}
+.branding-title {
+  width: 100%;
+  text-align: left;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px) {
+  .branding-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .branding-title {
+    text-align: center;
+    width: 80%;
+    line-height: 40px;
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .branding-title {
+    width: 90%;
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+.branding-title-colored {
+  color: #D87D4A;
+}/*# sourceMappingURL=branding.css.map */

@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.buttonTransparent {
+    width: 160px;
+    height: 48px;
+    background-color: transparent;
+    color: $black-dark-color;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: $text-font;
+    border: 1px solid $black-dark-color;
+    border-radius: 2px;
+
+    @include tablet {
+        width: 128px;
+        height: 44px;
+        font-size: 11px;
+    }
+}
+
+.buttonTransparent:hover {
+    background-color: $black-dark-color;
+    color: $white-light-color;
+}

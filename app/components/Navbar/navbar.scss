@@ -1,0 +1,173 @@
+@use '../../Styles/variables' as *;
+@use '../../Styles/breakpoints' as *;
+
+
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 100px;
+  background-color: $navbar-color;
+  z-index: 999;
+  @include desktop{
+    padding: 0 60px;
+  }
+  @include tablet{
+    padding: 0 45px;
+  }
+  @include mobile{
+    padding: 0 25px;
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.164);
+    height: 90px;
+    margin: 0 auto;
+    max-width: 1130px;
+    position: relative;
+  }
+  &__hamburger{
+    display: none;
+    cursor: pointer;
+    @include tablet{
+      display: flex;
+    }
+  }
+  &__close{
+    display: none;
+    cursor: pointer;
+    @include tablet{
+      display: flex;
+    }
+  }
+  &__logo{
+    display: flex;
+    position: absolute;
+    left: 0;
+    @include desktop {
+      transform: scale(0.7);
+      left: -21px;
+    }
+    @include tablet {
+      transform: initial;
+      left: 55px;
+    }
+    @include mobile {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &__items{
+    display: flex;
+    color: $white-light-color;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    font-size: 13.5px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    @include desktop {
+      gap: 21px;
+    }
+    @include tablet {
+      display: none;
+    }
+    & li.active {
+      color: $orange-dark-color;
+    }
+    & li:hover {
+      color: $orange-light-color;
+    }
+  }
+  &__cart {
+    display: flex;
+    position: absolute;
+    right: 0;
+    color: $white-light-color;
+    & .count{
+      background-color: $orange-dark-color;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      right: -10px;
+      top: -11px;
+      font-size: 11px;
+      font-weight: 500;
+      z-index: 10;
+      color: $white-light-color;
+      display: none;
+    }
+    .show{
+      display: flex;
+    }
+  }
+  &__slide{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    padding: 0 30px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: $white-light-color;
+    padding-top: 60px;
+    top: -350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 9999999;
+    animation: animate 0.4s ease-in-out forwards;
+    @include tablet{
+      display: flex;
+    }
+    @include mobile {
+      animation: animateMobile 0.4s ease-in-out forwards;
+    }
+  }
+  
+  &__overlay{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    min-height: 500vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 999;
+    .active{
+      animation: animate 0.4s ease-in-out forwards;
+    }
+  }
+
+}
+
+
+
+@keyframes animate {
+  from{
+    opacity: 0;
+    top: -350px;
+  }
+  to{
+    opacity: 1;
+    top: 250px;
+  }
+}
+@keyframes animateMobile {
+  from{
+    opacity: 0;
+    top: -350px;
+  }
+  to{
+    opacity: 1;
+    top: 470px;
+  }
+}

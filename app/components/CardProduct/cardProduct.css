@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1130px;
+  gap: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .card {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    gap: 30px;
+  }
+}
+.card__picture {
+  display: flex;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .card__picture {
+    width: 100%;
+  }
+}
+.card__picture img {
+  border-radius: 10px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .card__picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+  }
+}
+
+.card:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .card:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+.card-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .card-description-container {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.new-product {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10px;
+  color: #D87D4A;
+  letter-spacing: 7px;
+  font-size: 13px;
+}
+@media screen and (max-width: 1024px) {
+  .new-product {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new-product {
+    justify-content: center;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .new-product {
+    letter-spacing: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.card-description-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .card-description-content {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-description-content {
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-description-content {
+    gap: 20px;
+  }
+}
+
+.card-title {
+  text-align: left;
+  line-height: 33px;
+  font-size: 32px;
+  letter-spacing: 1.15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .card-title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-title {
+    text-align: center;
+    font-size: 37px;
+    width: 270px;
+    line-height: 37px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-title {
+    font-size: 30px;
+  }
+}
+
+.card-description {
+  text-align: left;
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+@media screen and (max-width: 1024px) {
+  .card-description {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-description {
+    text-align: center;
+    font-size: 14px;
+    width: 90%;
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-description {
+    width: 95%;
+  }
+}
+
+.card-speaker {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1130px;
+  gap: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .card-speaker {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-speaker {
+    flex-direction: column;
+    gap: 45px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-speaker {
+    gap: 30px;
+  }
+}
+.card-speaker__picture {
+  display: flex;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .card-speaker__picture {
+    width: 100%;
+  }
+}
+.card-speaker__picture img {
+  border-radius: 10px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .card-speaker__picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+  }
+}
+
+.card-speaker:nth-child(1) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .card-speaker:nth-child(1) {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=cardProduct.css.map */

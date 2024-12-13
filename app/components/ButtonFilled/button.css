@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.buttonFilled {
+  width: 160px;
+  height: 48px;
+  background-color: #D87D4A;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: "Manrope";
+  border-radius: 2px;
+}
+@media screen and (max-width: 768px) {
+  .buttonFilled {
+    width: 128px;
+    height: 44px;
+    font-size: 11px;
+  }
+}
+
+.buttonFilled:hover {
+  background-color: #FBAF85;
+}/*# sourceMappingURL=button.css.map */

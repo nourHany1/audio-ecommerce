@@ -1,0 +1,167 @@
+@use "../../Styles/variables" as *;
+@use "../../Styles/breakpoints" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $black-light-color;
+  height: auto;
+  padding: 40px 100px 30px 100px;
+
+  @include desktop {
+    padding: 40px 60px 30px 60px;
+  }
+
+  @include tablet {
+    padding: 40px 40px 50px 40px;
+  }
+
+  @include mobile {
+    padding: 25px 25px 30px 25px;
+  }
+  &-container {
+    width: 100%;
+    max-width: 1130px;
+    position: relative;
+    margin-top: 30px;
+  }
+  &-border {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    height: 4px;
+    background-color: $orange-dark-color;
+    width: 100px;
+
+    @include mobile {
+      top: -55px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &-navbar-items {
+    display: flex;
+    color: $white-light-color;
+    list-style: none;
+    gap: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    @include tablet {
+      font-size: 13px;
+      gap: 25px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 25px 0 10px 0;
+    }
+  }
+  &-navbar-items li:hover {
+    color: $orange-light-color;
+  }
+  &-navbar-items li.active {
+    color: $orange-dark-color;
+  }
+  &-description-container {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    align-items: left;
+    justify-content: center;
+    width: 50%;
+    gap: 50px;
+    margin-top: 40px;
+    line-height: 23px;
+
+    @include tablet {
+      margin-top: 35px;
+      width: 100%;
+    }
+
+    @include mobile {
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &-description-text,
+  &-copyrights {
+    text-align: left;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &-description-text {
+    width: 530px;
+
+    @include tablet {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &-copyrights {
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+    top: 130px;
+
+    @include tablet {
+      top: inherit;
+      bottom: 0;
+    }
+
+    @include mobile {
+      display: flex;
+      position: inherit;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+
+  &-links {
+    cursor: pointer;
+    fill: #fff;
+  }
+
+  &-links:hover {
+    fill: $orange-dark-color;
+  }
+}
+
+.top-footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  @include mobile {
+    align-items: center;
+    gap: 25px;
+  }
+}

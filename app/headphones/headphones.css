@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.page-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 100px 0 100px;
+  gap: 120px;
+}
+@media screen and (max-width: 1024px) {
+  .page-product-container {
+    padding: 130px 60px 0 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-product-container {
+    padding: 100px 40px 0 40px;
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-product-container {
+    padding: 70px 25px 0 25px;
+  }
+}
+
+.page-product-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 150px;
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .page-product-content {
+    padding-bottom: 40px;
+    gap: 130px;
+  }
+}
+
+.page-banner-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #191919;
+}
+@media screen and (max-width: 768px) {
+  .page-banner-container {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-banner-container {
+    height: 130px;
+  }
+}
+
+.page-title {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-title {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=headphones.css.map */

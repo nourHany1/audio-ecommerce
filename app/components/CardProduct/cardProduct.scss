@@ -1,0 +1,213 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1130px;
+    gap: 100px;
+
+    @include desktop {
+        gap: 70px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    @include mobile {
+        gap: 30px;
+    }
+
+    &__picture {
+        display: flex;
+        width: 60%;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__picture img {
+        border-radius: 10px;
+        width: 100%;
+        object-fit: cover;
+
+        @include tablet {
+            object-fit: cover;
+            height: 400px;
+        }
+    }
+}
+
+.card:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.card-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+
+    @include tablet {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.new-product {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+    color: $orange-dark-color;
+    letter-spacing: 7px;
+    font-size: 13px;
+
+    @include desktop {
+        font-size: 12px;
+    }
+
+    @include tablet {
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    @include mobile {
+        letter-spacing: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+.card-description-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    gap: 30px;
+
+    @include desktop {
+        gap: 20px;
+    }
+
+    @include tablet {
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @include mobile {
+        gap: 20px;
+    }
+}
+
+
+.card-title {
+    text-align: left;
+    line-height: 33px;
+    font-size: 32px;
+    letter-spacing: 1.15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include desktop {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    @include tablet {
+        text-align: center;
+        font-size: 37px;
+        width: 270px;
+        line-height: 37px;
+    }
+
+    @include mobile {
+        font-size: 30px;
+    }
+}
+
+.card-description {
+    text-align: left;
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+
+    @include desktop {
+        font-size: 13px;
+    }
+
+    @include tablet {
+        text-align: center;
+        font-size: 14px;
+        width: 90%;
+        line-height: 23px;
+    }
+
+    @include mobile {
+        width: 95%;
+    }
+
+}
+
+
+// SPEAKERS 
+
+.card-speaker {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1130px;
+    gap: 100px;
+
+    @include desktop {
+        gap: 70px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    @include mobile {
+        gap: 30px;
+    }
+
+    &__picture {
+        display: flex;
+        width: 60%;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__picture img {
+        border-radius: 10px;
+        width: 100%;
+        object-fit: cover;
+
+        @include tablet {
+            object-fit: cover;
+            height: 400px;
+        }
+    }
+}
+
+.card-speaker:nth-child(1) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
