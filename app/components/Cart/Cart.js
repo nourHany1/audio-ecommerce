@@ -3,6 +3,7 @@ import React, { forwardRef, useEffect, useState } from 'react';
 import { useShoppingCart } from '../Context/contextProvider';
 import Link from 'next/link';
 import './cart.scss';
+import Image from 'next/image';
 
 const Cart = forwardRef(({handleCart}, ref) => {
   const { cart, totalPrice, numItems, clearShoppingCart, increaseItemsQty, decreaseItemsQty } = useShoppingCart();
@@ -62,7 +63,7 @@ const Cart = forwardRef(({handleCart}, ref) => {
                   <div key={item.id} className="cart-products">
                     <Link href={`/${item.category}/products/${item.name}`} state={item}>
                       <div className="cart-products__item">
-                        <img src={item.image} alt={item.name} />
+                        <Image width={60} height={60} src={item.image} alt={item.name} />
                         <div className="cart-products__content">
                           <p className="cart-products__content__title">{item.subName}</p>
                           <p className="cart-products__content__price">{formattedPrices[item.id]}</p>

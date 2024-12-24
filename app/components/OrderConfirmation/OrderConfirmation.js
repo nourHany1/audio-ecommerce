@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './orderConfirmation.scss'
 import Link from 'next/link'
 import formatPrice from '../formatPrice/formatPrice';
+import Image from 'next/image';
 
 export default function OrderConfirmation({grandPriceFormatted,confirmationActive}) {
 
@@ -39,7 +40,7 @@ export default function OrderConfirmation({grandPriceFormatted,confirmationActiv
                         
                             <div className="order-summary__products__content__container">
 
-                                <img src={product.image} alt={product.name} />
+                                <Image width={70} height={70} src={product.image} alt={product.name} />
                                 <div className="order-summary__products__content">
                                     <p className="order-summary__products__content__name">{product.subName}</p>
                                     <p className="order-summary__products__content__price"> {formatPrice(product.price)}</p>
@@ -70,7 +71,7 @@ export default function OrderConfirmation({grandPriceFormatted,confirmationActiv
                             <div key={index} className="order-summary__products__container">
                                 <div className="order-summary__products__content__container">
 
-                                    <img src={item.image} alt={item.name} />
+                                    <Image src={item.image} alt={item.name} />
                                     <div className="order-summary__products__content">
                                         <p className="order-summary__products__content__name">{item.subName}</p>
                                         <p className="order-summary__products__content__price">{formatPrice(item.price)}</p>

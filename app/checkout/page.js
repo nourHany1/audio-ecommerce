@@ -6,6 +6,7 @@ import Link from 'next/link'
 import OrderConfirmation from '../components/OrderConfirmation/OrderConfirmation'
 import { useShoppingCart } from '../components/Context/contextProvider'
 import formatPrice from '../components/formatPrice/formatPrice'
+import Image from 'next/image'
 
 // import { useRouter } from 'next/router'
 
@@ -506,7 +507,7 @@ export default function Checkout() {
                          <Link key={index} href={ `/${product.category}/${product.slug}`} state={product}>
                             <div className="summary-items">
 
-                                <img src={product.image} alt={product.name} />
+                                <Image width={70} height={70} src={product.image} alt={product.name} />
 
                                 <div className="summary-item-content">
                                     <div className="summary-item-information">

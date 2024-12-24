@@ -5,7 +5,7 @@ import data from '../../data.json'
 import ProductSection from '../components/ProductSection/ProductSection'
 import CardProduct from '../components/CardProduct/CardProduct'
 import './headphones.scss'
-const page = () => {
+const Page = () => {
   useEffect(() => {
     document.title = "Audiophile - Headphones"
   }, [])
@@ -37,4 +37,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

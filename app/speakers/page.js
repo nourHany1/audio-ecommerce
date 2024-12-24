@@ -6,7 +6,7 @@ import ProductSection from '../components/ProductSection/ProductSection'
 import CardProduct from '../components/CardProduct/CardProduct'
 import '../headphones/headphones.scss'
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     document.title = "Audiophile - Speakers"
   }, [])
@@ -38,4 +38,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
